@@ -1,73 +1,133 @@
-# Welcome to your Lovable project
+🌱 Dr.Maya Reynolds
 
-## Project info
+A modern, responsive, and visually engaging therapy website built with React (Vite), Tailwind CSS, and shadcn/ui. Includes pages for home, about, my office, contact, and bookings. The contact and bookings forms are powered by Web3Forms.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+Features
 
-## How can I edit this code?
+✅ Responsive Design: Mobile-first layout with Tailwind CSS.
 
-There are several ways of editing your application.
+✅ Shadcn UI Components: Prebuilt, reusable UI components for a polished look.
 
-**Use Lovable**
+✅ Video & Image Galleries: Hero video section, office gallery, and image-based sections.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+✅ React Router: Client-side routing for smooth navigation.
 
-Changes made via Lovable will be committed automatically to this repo.
+✅ React Query: Handles any asynchronous data fetching (future-proof for APIs/bookings).
 
-**Use your preferred IDE**
+✅ Web3Forms Integration: Contact and booking forms with email notifications.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+✅ Animations: Subtle fade-in and hover animations for interactive experience.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+✅ SEO-Friendly & Accessible: Semantic HTML and ARIA roles included.
 
-Follow these steps:
+Project Structure
+Grow_Therapy/
+├─ public/                   # Public assets
+├─ src/
+│  ├─ assets/                # Images & videos
+│  ├─ components/            # Reusable UI components
+│  ├─ hooks/                 # Custom hooks (e.g., toast)
+│  ├─ pages/                 # Pages (Home, About, MyOffice, Contact, Bookings)
+│  ├─ App.jsx                # Main React app with routes
+│  └─ main.jsx               # Entry point
+├─ package.json
+├─ tailwind.config.js
+└─ vite.config.js
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Installation
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Clone the repository:
 
-# Step 3: Install the necessary dependencies.
-npm i
+git clone https://github.com/YOUR_USERNAME/Grow_Therapy.git
+cd Grow_Therapy
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+
+Install dependencies:
+
+npm install
+# or
+yarn install
+
+
+Start the development server:
+
 npm run dev
-```
+# or
+yarn dev
 
-**Edit a file directly in GitHub**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Your site will be live at http://localhost:5173 (Vite default).
 
-**Use GitHub Codespaces**
+Environment Variables
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+For Web3Forms integration:
 
-## What technologies are used for this project?
+Create a .env file at the project root.
 
-This project is built with:
+Add your Web3Forms API key:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+VITE_WEB3FORMS_API_KEY=your_web3forms_api_key_here
 
-## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+Use this key in your contact and bookings form fetch requests.
 
-## Can I connect a custom domain to my Lovable project?
+Deployment
 
-Yes, you can!
+You can deploy this project easily on Netlify, Vercel, or any static hosting service:
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+For Netlify:
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Push your repo to GitHub.
+
+Connect your repository to Netlify.
+
+Set the build command:
+
+npm run build
+
+
+Set the publish directory:
+
+dist
+
+Usage
+
+Home Page: Hero section, introduction, call-to-action buttons.
+
+About Page: Information about the therapist and approach.
+
+My Office: Video tour and office gallery.
+
+Contact Page: Contact form powered by Web3Forms.
+
+Bookings Page: Booking form for scheduling therapy sessions.
+
+Tech Stack
+
+React + Vite
+
+Tailwind CSS + shadcn/ui
+
+React Router DOM
+
+React Query (@tanstack/react-query)
+
+Web3Forms (contact and bookings forms)
+
+JavaScript / JSX
+
+Contributing
+
+Fork the repository.
+
+Create a feature branch: git checkout -b feature-name
+
+Commit your changes: git commit -m "Add feature"
+
+Push to branch: git push origin feature-name
+
+Create a Pull Request.
+
+License
+
+This project is MIT Licensed.
